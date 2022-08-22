@@ -1,38 +1,8 @@
-2. Cloud Concepts
+## 2. Cloud Concepts
 -----------------
-Consumption-based pricing is indeed when you are charged for only what you use (pay-as-you-go rate). Consumption-based pricing is not limited to free accounts, and the services are not necessarily consumed all the time.
-
-Infrastructure as a service (IaaS) is a type of cloud computing service that offers essential compute, storage, and networking resources on demand, on a pay-as-you-go basis. IaaS lets you bypass the cost and complexity of buying and managing physical servers and datacenter infrastructure. Each resource is offered as a separate service component, and you only pay for a particular resource for as long as you need it.
-
-Fault tolerance means a failure can occur on Azure services and applications, but it will not affect its availability.
-
-Serverless computing solutions provide a simple way to create manageable and scalable solutions at low costs. There is always a server somewhere to run your application, but you don't control it. Serverless is a kind of extreme PaaS.
-
-Cloud agility is tied to the rapid provisioning of computer resources. Cloud environments can usually provide new compute instances or storage in minutes, a far cry from the common weeks (or months, in some organizations) that the same provisioning process can take in typical IT shops.
-
-Elasticity is a core benefit of cloud computing and lets even small businesses take advantage of the cloud.
-Elasticity: The ability to quickly expand or decrease computer processing, memory, and storage resources.
-
-Microsoft defines private clouds as being able to be hosted at your datacenter or hosted by a third-party service. Microsoft considers private clouds as offering more flexibility, control, and scalability. Note: Other cloud vendors would not agree with those advantages of private clouds, but it is best to be aware of Microsoft's view in case it comes up on the exam.
-
-Microsoft defines hybrid cloud as combining a public cloud (such as Azure) with on-premises infrastructure (private cloud).
-
-A private cloud consists of cloud computing resources used exclusively by one business or organization. The private cloud can be physically located at your organization’s on-site datacenter, or it can be hosted by a third-party service provider. But in a private cloud, the services and infrastructure are always maintained on a private network, and the hardware and software are dedicated solely to your organization.
-
-Scaling up/down is making a resource, such as a VM, larger or smaller. This is also known as scaling vertically. Scaling out is adding more resources of the same type, known as scaling horizontally.
-
-Knowing the difference between OpEx and CapEx is critical to get the best value out of Azure for your company. Capital expenditures (CapEx) generally result in the acquisition and maintenance of assets, such as server hardware. Operating expenditures (OpEx) are the ongoing costs of running a business, such as paying for cloud services on a recurring basis. By moving costs to OpEx, businesses can plan for ongoing costs rather than large investments.
-
-High availability is one of the core benefits of using cloud computing. It ensures backup resources are ready to take over any workload.
-
-Scalability is a core benefit of cloud computing and allows any application to add resources almost instantly as demand increases. Azure Documentation: https://docs.microsoft.com/en-us/azure/architecture/framework/scalability/design-scale
-
-A hybrid cloud model is the best of private and public cloud that can be used to avoid disruptions and outages, adhere to regulation and governance, span solutions across both public and private cloud, and alleviate CapEx investments.
 
 
-
-
-3. Azure Architecture
+## 3. Azure Architecture
 ---------------------
 
 An Azure region is a set of datacenters, deployed within a latency-defined perimeter and connected through a dedicated regional low-latency network. With more global regions than any other cloud service provider, Azure gives customers the flexibility to deploy applications where they need. An Azure region has discrete pricing and service availability.
@@ -53,7 +23,7 @@ https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/delete-
 Resources belong to a resource group, which can be a geographical, logical, customer-specific, or any other type of grouping.
 
 
-4. Compute
+## 4. Compute
 ---------
 
 Infrastructure as a Service includes services that emulate hardware, such as virtual machines, networks, and storage.
@@ -77,7 +47,7 @@ https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview
 Azure Virtual Desktop (formerly Windows Virtual Desktop) helps you quickly set up an environment, and even lets you reuse any existing Windows 10 licenses you have.
 
 
-5. Networking
+## 5. Networking
 -------------
 
 A load balancer sits in front of two or more virtual machines to manage, and balance, the load to the virtual machines. This can be based on amount of incoming traffic or specific properties in the traffic. A load balancer has nothing to do with virtual disks, and the max number of VMs to manage goes up to 1,000. A load balancer ensures only healthy instances receive traffic and will stop sending traffic to any server that does not pass health checks. All Azure load balancers can log traffic that passes through them.
@@ -95,7 +65,7 @@ A CDN keeps a recent copy of your web application and can deliver this much fast
 
 ExpressRoute lets you extend your on-premises networks into the Microsoft cloud over a private connection with the help of a connectivity provider. With ExpressRoute, you can establish connections to Microsoft cloud services, such as Microsoft Azure and Microsoft 365.
 
-6. Storage
+## 6.Storage
 ---------
 
 Azure Files can be used to completely replace or supplement traditional on-premises file servers or NAS devices. Popular operating systems such as Windows, macOS, and Linux can directly mount Azure file shares wherever they are in the world. SMB Azure file shares can also be replicated with Azure File Sync to Windows Servers, either on-premises or in the cloud, for performance and distributed caching of the data where it's being used.
@@ -117,7 +87,7 @@ Page blobs are used for random read/write operations. Picture this like the comp
 Blob containers on Azure act similar to directories in a file system. They can contain an unlimited number of blobs.
 
 
-7. Database
+## 7. Database
 -----------
 
 Using Azure Database Migration Service, you can migrate directly from Microsoft SQL Server to Azure SQL. It is recommended by Azure to move your on-premises SQL Server instances to Azure SQL to improve efficiency and lower costs.
@@ -134,7 +104,7 @@ The power of a database is how the data is sorted and indexed, as well as the fl
 
 
 
-8. Authentication & Authorization
+## 8. Authentication & Authorization
 ----------------------------------
 
 Authentication is the process of determining that you are you. This is most commonly done using a username and password, but it could also be with a fingerprint or face recognition.
@@ -145,7 +115,7 @@ Azure multi-factor authentication (MFA) helps safeguard access to data and appli
 
 Single sign-on lets users use a single username and password to access all apps registered with Azure AD.
 
-9. Azure Solutions
+## 9. Azure Solutions
 -------------------
 
 A model is the way you define what you want your machine learning implementation to learn. You give it a model, which is a set of rules, and the application then starts playing this model over and over again with the data you have provided. Over time, usually very fast, the model will find patterns in the data that follow the rules you have provided.
