@@ -32,7 +32,7 @@ A hybrid cloud model is the best of private and public cloud that can be used to
 
 
 
-##3. Azure Architecture
+## 3. Azure Architecture
 ---------------------
 
 An **Azure Region** is a set of datacenters, deployed within a latency-defined perimeter and connected through a dedicated regional low-latency network. With more global regions than any other cloud service provider, Azure gives customers the flexibility to deploy applications where they need. An Azure region has discrete pricing and service availability.
@@ -55,7 +55,7 @@ https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/delete-
 Resources belong to a resource group, which can be a geographical, logical, customer-specific, or any other type of grouping.
 
 
-##4. Compute
+## 4. Compute
 ---------
 
 Infrastructure as a Service includes services that emulate hardware, such as virtual machines, networks, and storage.
@@ -81,7 +81,7 @@ https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview
 Azure Virtual Desktop (formerly Windows Virtual Desktop) helps you quickly set up an environment, and even lets you reuse any existing Windows 10 licenses you have.
 
 
-##5. Networking
+## 5. Networking
 -------------
 
 A load balancer sits in front of two or more virtual machines to manage, and balance, the load to the virtual machines. This can be based on amount of incoming traffic or specific properties in the traffic. A load balancer has nothing to do with virtual disks, and the max number of VMs to manage goes up to 1,000. A load balancer ensures only healthy instances receive traffic and will stop sending traffic to any server that does not pass health checks. All Azure load balancers can log traffic that passes through them.
@@ -99,7 +99,7 @@ A CDN keeps a recent copy of your web application and can deliver this much fast
 
 ExpressRoute lets you extend your on-premises networks into the Microsoft cloud over a private connection with the help of a connectivity provider. With ExpressRoute, you can establish connections to Microsoft cloud services, such as Microsoft Azure and Microsoft 365.
 
-##6. Storage
+## 6. Storage
 ---------
 
 Azure Files can be used to completely replace or supplement traditional on-premises file servers or NAS devices. Popular operating systems such as Windows, macOS, and Linux can directly mount Azure file shares wherever they are in the world. SMB Azure file shares can also be replicated with Azure File Sync to Windows Servers, either on-premises or in the cloud, for performance and distributed caching of the data where it's being used.
@@ -121,7 +121,7 @@ Page blobs are used for random read/write operations. Picture this like the comp
 Blob containers on Azure act similar to directories in a file system. They can contain an unlimited number of blobs.
 
 
-##7. Database
+## 7. Database
 -----------
 
 Using Azure Database Migration Service, you can migrate directly from Microsoft SQL Server to Azure SQL. It is recommended by Azure to move your on-premises SQL Server instances to Azure SQL to improve efficiency and lower costs.
@@ -138,7 +138,7 @@ The power of a database is how the data is sorted and indexed, as well as the fl
 
 
 
-##8. Authentication & Authorization
+## 8. Authentication & Authorization
 ----------------------------------
 
 Authentication is the process of determining that you are you. This is most commonly done using a username and password, but it could also be with a fingerprint or face recognition.
@@ -154,7 +154,7 @@ https://docs.microsoft.com/en-us/azure/active-directory/enterprise-users/directo
 
 
 
-##9. Azure Solutions
+## 9. Azure Solutions
 -------------------
 
 A model is the way you define what you want your machine learning implementation to learn. You give it a model, which is a set of rules, and the application then starts playing this model over and over again with the data you have provided. Over time, usually very fast, the model will find patterns in the data that follow the rules you have provided.
@@ -176,7 +176,7 @@ Analyzing Big Data can often lead to more precise decision-making for a business
 
 **Azure HDInsight** is an open-source analytics service for enterprises that makes it easy, fast, and cost-effective to process massive amounts of data.
 
-##10. Security
+## 10. Security
 ------------
 
 **Azure Firewall** blocks any incoming or outgoing traffic that isn't specifically allowed *on a network*. 
@@ -205,7 +205,7 @@ Azure dedicated hosts run on their own dedicated hardware inside the Azure datac
 
 Appropriately configured **Network Security groups** allow you to *control all inbound and outbound traffic for your virtual machines.*
 
-##11. Privacy, Compliance & Trust
+## 11. Privacy, Compliance & Trust
 -------------------------------
 
 **Locks** can be put on resources to make sure there aren't any accidental or nefarious actions taken on them. The two types of locks are **delete**, which means you can't delete the resource, and **read-only**, which means you can't make any changes to the resources.
@@ -233,7 +233,7 @@ The General Data Protection Regulation (EU) 2016/679 **("GDPR")** is a regulatio
  **ISO** - The International Organization for Standardization (ISO) is an independent nongovernmental organization and the world's largest developer of voluntary international standards. 
 
 
-##12. Pricing
+## 12. Pricing
 -------
 
 The pricing calculator for Azure is a comprehensive tool you can use to estimate any combination of services on Azure. The Total Cost of Ownership Calculator can indicate the savings achieved by moving your on-premises services to Azure. The Azure portal can only estimate costs of existing services that you have in your account.
@@ -249,7 +249,7 @@ The factors that influence the **price** of a service on Azure are *resource siz
 The only way to **combine Azure subscriptions** is to open a support case with Microsoft. 
 
 
-##13. Support
+## 13. Support
 -------
 
 Service-level agreements are implicit for all Azure paid services. You get an SLA included with every subscription level and support level. In general, there are no SLAs associated with free products on Azure.
