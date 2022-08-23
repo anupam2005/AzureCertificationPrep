@@ -1,4 +1,4 @@
-##2. Cloud Concepts
+## 2. Cloud Concepts
 -----------------
 Consumption-based pricing is indeed when you are charged for only what you use (pay-as-you-go rate). Consumption-based pricing is not limited to free accounts, and the services are not necessarily consumed all the time.
 
