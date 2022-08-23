@@ -17,7 +17,9 @@ Microsoft defines private clouds as being able to be hosted at your datacenter o
 
 Microsoft defines hybrid cloud as combining a public cloud (such as Azure) with on-premises infrastructure (private cloud).
 
-A private cloud consists of cloud computing resources used exclusively by one business or organization. The private cloud can be physically located at your organization’s on-site datacenter, or it can be hosted by a third-party service provider. But in a private cloud, the services and infrastructure are always maintained on a private network, and the hardware and software are dedicated solely to your organization.
+A **private cloud** consists of cloud computing resources used exclusively by one business or organization. The private cloud can be physically located at your organization’s on-site datacenter, or it can be hosted by a third-party service provider. But in a private cloud, the services and infrastructure are always maintained on a private network, and the hardware and software are dedicated solely to your organization.
+
+Private cloud - High Sclalability & Improved Security.
 
 Scaling up/down is making a resource, such as a VM, larger or smaller. This is also known as scaling vertically. Scaling out is adding more resources of the same type, known as scaling horizontally.
 
@@ -54,6 +56,7 @@ https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/delete-
 
 Resources belong to a resource group, which can be a geographical, logical, customer-specific, or any other type of grouping.
 
+**Azure Blueprints** is a *declarative way to orchestrate the deployment of various resource templates* and other artifacts such as: - *Role assignments* - *Policy assignments* - *Azure Resource Manager templates (ARM templates)* - *Resource groups*
 
 ## 4. Compute
 ---------
@@ -84,41 +87,43 @@ Azure Virtual Desktop (formerly Windows Virtual Desktop) helps you quickly set u
 ## 5. Networking
 -------------
 
-A load balancer sits in front of two or more virtual machines to manage, and balance, the load to the virtual machines. This can be based on amount of incoming traffic or specific properties in the traffic. A load balancer has nothing to do with virtual disks, and the max number of VMs to manage goes up to 1,000. A load balancer ensures only healthy instances receive traffic and will stop sending traffic to any server that does not pass health checks. All Azure load balancers can log traffic that passes through them.
+**Network peering** allows you to connect multiple virtual networks over the private Azure network for a private network connection.
 
-You can use multi-site hosting to use the same Application Gateway for more than one website. You can, in fact, add up to 100 websites to the same instance of an Application Gateway. This will both save you on cost and complexity.
-An Application Gateway is similar to a load balancer, but it can redirect traffic based on attributes in the HTTP request, the request coming in from the internet. You can have a VM handling video, one handling images and so on. Application Gateways do not handle traffic security, nor manage any virtual networks.
+A **load balancer** sits in front of two or more virtual machines to manage, and balance, the load to the virtual machines. This can be based on amount of incoming traffic or specific properties in the traffic. A load balancer has nothing to do with virtual disks, and the *max number of VMs to manage goes up to 1,000.* A load balancer ensures only healthy instances receive traffic and will stop sending traffic to any server that does not pass health checks. All Azure load balancers can log traffic that passes through them.
 
-Azure Virtual Network enables Azure resources to securely communicate with each other, the internet, and on-premises networks. Key scenarios that you can accomplish a virtual network include: communication of Azure resources with the internet, communication between Azure resources, communication with on-premises resources, filtering network traffic, routing network traffic, and integration
+You can use *multi-site hosting* to use the same **Application Gateway** for more than one website. You can, in fact, add up to 100 websites to the same instance of an Application Gateway. This will both save you on cost and complexity.
 
-A VPN gateway is an important part of a hybrid Azure infrastructure. It allows encrypted traffic to flow between on-premises services and Azure services.
+An **Application Gateway** is similar to a load balancer, but it can *redirect traffic* based on attributes in the HTTP request, the request coming in from the internet. You can have a VM handling video, one handling images and so on. Application Gateways do not handle traffic security, nor manage any virtual networks.
 
-A CDN keeps a recent copy of your web application and can deliver this much faster to users close to an endpoint. CDNs can handle a lot more data than a typical web server, which makes it ideal to handle traffic spikes as well. CDNs don't generally handle individual traffic routing rules, nor security.
+**Azure Virtual Network** enables *Azure resources to securely communicate with each other*, the internet, and on-premises networks. Key scenarios that you can accomplish a virtual network include: *communication of Azure resources with the internet, communication between Azure resources, communication with on-premises resources, filtering network traffic, routing network traffic, and integration*
 
-A CDN keeps a recent copy of your web application and can deliver this much faster to users close to an endpoint. CDNs can handle a lot more data than a typical web server, which makes it ideal to handle traffic spikes as well. CDNs don't generally handle individual traffic routing rules, nor security.
+A **VPN gateway** is an important part of a hybrid Azure infrastructure. It allows *encrypted traffic* to flow between *on-premises services and Azure services*.
 
-ExpressRoute lets you extend your on-premises networks into the Microsoft cloud over a private connection with the help of a connectivity provider. With ExpressRoute, you can establish connections to Microsoft cloud services, such as Microsoft Azure and Microsoft 365.
+A **CDN** keeps a recent copy of your web application and can deliver this much faster to users close to an endpoint. CDNs can handle a lot more data than a typical web server, which makes it ideal to handle traffic spikes as well. CDNs don't generally handle individual traffic routing rules, nor security.
+
+**ExpressRoute** lets you extend your on-premises networks into the Microsoft cloud over *a private connection with the help of a connectivity provider*. With ExpressRoute, you can establish connections to Microsoft cloud services, such as Microsoft Azure and Microsoft 365.
 
 ## 6. Storage
 ---------
 
-Azure Files can be used to completely replace or supplement traditional on-premises file servers or NAS devices. Popular operating systems such as Windows, macOS, and Linux can directly mount Azure file shares wherever they are in the world. SMB Azure file shares can also be replicated with Azure File Sync to Windows Servers, either on-premises or in the cloud, for performance and distributed caching of the data where it's being used.
+**Azure Files** can be used to completely replace or supplement traditional on-premises file servers or NAS devices. Popular operating systems such as Windows, macOS, and Linux can directly mount Azure file shares wherever they are in the world. SMB Azure file shares can also be replicated with Azure File Sync to Windows Servers, either on-premises or in the cloud, for performance and distributed caching of the data where it's being used.
 https://docs.microsoft.com/en-us/azure/storage/files/storage-files-introduction#why-azure-files-is-useful
 
-Azure Blob storage is Microsoft's object storage solution for the cloud. Blob storage is optimized for storing massive amounts of unstructured data, such as text or binary data. Blob storage is ideal for storing data for backup and restore, disaster recovery, and archiving. Azure Documentation
+**Azure Blob storage** is Microsoft's object storage solution for the cloud. Blob storage is optimized for storing massive amounts of unstructured data, such as text or binary data. Blob storage is ideal for storing data for backup and restore, disaster recovery, and archiving. Azure Documentation
 https://docs.microsoft.com/en-us/azure/storage/common/storage-introduction#blob-storage
 
-Disk storage is a full Virtual hard disk that you can access. It is ideal as the disk for a Virtual machine. In fact, when you create a Virtual machine, disk storage is created too.
+**Disk storage** is a full Virtual hard disk that you can access. It is ideal as the disk for a Virtual machine. In fact, when you create a Virtual machine, disk storage is created too.
 
-A storage account provides a unique namespace in Azure for your data. Every object you store in Azure Storage has an address that includes your unique account name. The combination of the account name and the Azure Storage service endpoint forms the endpoints for your storage account. Your storage account name must be unique within Azure. No two storage accounts can have the same name. Reference: https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview#storage-account-endpoints
+A **storage account** provides *a unique namespace in Azure for your data*. Every object you store in Azure Storage has an address that includes your unique account name. The combination of the account name and the Azure Storage service endpoint forms the endpoints for your storage account. Your storage account name must be unique within Azure. No two storage accounts can have the same name. Reference: https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview#storage-account-endpoints
 
 Azure offers four types of manage disk storage: Standard HDD, Standard SSD, Premium SSD, and Ultra Disk.
 
-Block blobs are used for handling large amounts of data very effectively.
-Append blobs are used for operations where you are appending new data to existing content, rather than replacing it. Picture this like a log that you're constantly adding to.
-Page blobs are used for random read/write operations. Picture this like the computing equivalent of having a scrap piece of paper (or "page") on your desk to scribble notes on that you only need for temporary periods of time.
+**Block blobs** are used for handling large amounts of data very effectively.
+Append blobs are used for operations where you are *appending* new data to existing content, rather than replacing it. Picture this like a log that you're constantly adding to.
 
-Blob containers on Azure act similar to directories in a file system. They can contain an unlimited number of blobs.
+**Page blobs** are used for *random read/write* operations. Picture this like the computing equivalent of having a scrap piece of paper (or "page") on your desk to scribble notes on that you only need for temporary periods of time.
+
+**Blob containers** on Azure act similar to directories in a file system. They can contain an unlimited number of blobs.
 
 
 ## 7. Database
@@ -157,6 +162,8 @@ https://docs.microsoft.com/en-us/azure/active-directory/enterprise-users/directo
 ## 9. Azure Solutions
 -------------------
 
+**Azure Synapse Analytics (formerly known as Azure SQL Data Warehouse)** is a PaaS offering that can run queries against *petabytes of data*, often used for reports and data analytics.
+
 A model is the way you define what you want your machine learning implementation to learn. You give it a model, which is a set of rules, and the application then starts playing this model over and over again with the data you have provided. Over time, usually very fast, the model will find patterns in the data that follow the rules you have provided.
 
 There are currently five services in Azure DevOps: Boards for managing and tracking projects; **Azure Pipelines** for building, testing, and deploying projects; **Azure Repos** for storing and managing code; **Azure Test Plans** for conducting manual tests and automating tests; and **Azure Artifacts** for hosting and sharing packages to share functionality across teams.
@@ -172,12 +179,14 @@ Logic Apps connect systems both *inside and outside* of the Azure platform, inte
 
 Analyzing Big Data can often lead to more precise decision-making for a business, a cost reduction on the storage of the data using a service like Azure Data Lake, and better products that take customer feedback and behavior into account.
 
-**Azure Data Lake Analytics** can run massively parallel data transformation and processing programs across petabytes of data. 
+**Azure Data Lake Analytics** can run massively parallel data *transformation and processing* programs across petabytes of data. 
 
-**Azure HDInsight** is an open-source analytics service for enterprises that makes it easy, fast, and cost-effective to process massive amounts of data.
+**Azure HDInsight** is an *open-source* analytics service for enterprises that makes it easy, fast, and *cost-effective* to process massive amounts of data.
 
 ## 10. Security
 ------------
+
+**Azure Security Center** constantly reviews your active recommendations and calculates your secure score based on them.
 
 **Azure Firewall** blocks any incoming or outgoing traffic that isn't specifically allowed *on a network*. 
 
@@ -236,11 +245,13 @@ The General Data Protection Regulation (EU) 2016/679 **("GDPR")** is a regulatio
 ## 12. Pricing
 -------
 
-The pricing calculator for Azure is a comprehensive tool you can use to estimate any combination of services on Azure. The Total Cost of Ownership Calculator can indicate the savings achieved by moving your on-premises services to Azure. The Azure portal can only estimate costs of existing services that you have in your account.
+The **pricing calculator** for Azure is a comprehensive tool you can use to estimate any combination of services on Azure. The Total Cost of Ownership Calculator can indicate the savings achieved by moving your on-premises services to Azure. The Azure portal can only estimate costs of existing services that you have in your account.
 
-Azure spending limits are the recommended way to manage the total spend on your Azure subscription. When your usage results in charges that exhaust your spending limit, the services you deployed are disabled for the rest of that billing period.
+**Azure spending limits** are the recommended way to manage the total spend on your Azure subscription. When your usage results in charges that exhaust your spending limit, the services you deployed are disabled for the rest of that billing period.
 
 A subscription represents a grouping of Azure resources. An invoice is generated at the subscription scope.
+
+If you want to **raise the limit or quota above the default limit**, open an online customer support request at no charge. 
 
 **Azure Cost Management** is a part of the Azure portal that can visualize your current and future costs. It also includes tools for financial governance to make sure you don't get unexpected costs from incorrect use of Azure resources.
 
