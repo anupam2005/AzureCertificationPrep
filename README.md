@@ -103,6 +103,8 @@ A **CDN** keeps a recent copy of your web application and can deliver this much 
 
 **ExpressRoute** lets you extend your on-premises networks into the Microsoft cloud over *a private connection with the help of a connectivity provider*. With ExpressRoute, you can establish connections to Microsoft cloud services, such as Microsoft Azure and Microsoft 365.
 
+**ExpressRoute** connection uses a dedicated leased connection that **does not use the public internet**.
+
 ## 6. Storage
 ---------
 
@@ -124,6 +126,8 @@ Append blobs are used for operations where you are *appending* new data to exist
 **Page blobs** are used for *random read/write* operations. Picture this like the computing equivalent of having a scrap piece of paper (or "page") on your desk to scribble notes on that you only need for temporary periods of time.
 
 **Blob containers** on Azure act similar to directories in a file system. They can contain an unlimited number of blobs.
+
+**Ultra disks** are the most expensive, yet **highest-performing disk** types available for Azure virtual machines. They support up to 64TB on a single disk.
 
 
 ## 7. Database
@@ -183,6 +187,10 @@ Analyzing Big Data can often lead to more precise decision-making for a business
 
 **Azure HDInsight** is an *open-source* analytics service for enterprises that makes it easy, fast, and *cost-effective* to process massive amounts of data.
 
+Formerly know as "Azure Machine Learning Service," **Azure Machine Learning** is an all-in-one service that supports the entire end-to-end process of creating, testing, and deploying machine learning models. This is the ideal service for creating your own custom machine learning models. (Use this to do your own stuff)
+
+**Azure Cognitive Services** is a machine learning service; however, this one provides **pretrained models** accessible via an API. 
+
 ## 10. Security
 ------------
 
@@ -197,6 +205,8 @@ A **Network Security Group** manages the traffic to *specific services*.
 a **load balancer** distributes traffic to specific VMs. 
 
 **Microsoft Defender for Identity** helps you detect and investigate security incidents across your Azure accounts, both on-premises and in the cloud. It monitors users, devices, and resources in terms of their behavior. If any behavior is out of the ordinary, an alarm can be raised.
+
+**Microsoft Defender for Identity** (formerly Azure Advanced Threat Protection, also known as Azure ATP) is a cloud-based security solution that leverages your on-premises **Active Directory** signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization.
 
 A distributed denial-of-service (DDoS) attack comes from a large number of sources with the sole aim of stopping your service. This is done through sending web traffic to your service until it can't handle it all and stops working. Azure has tools to protect against DDoS attacks, which sometimes aren't attacks at all but just increased visitor interest in services or content.
 
@@ -257,7 +267,11 @@ If you want to **raise the limit or quota above the default limit**, open an onl
 
 The factors that influence the **price** of a service on Azure are *resource size, resource location, and the bandwidth* being used. How much you use a resource or the age of it do not influence the price.
 
-The only way to **combine Azure subscriptions** is to open a support case with Microsoft. 
+The only way to **combine Azure subscriptions** is to open a support case with Microsoft.
+
+When a **virtual machine is deleted**, its *managed disk remains in the Azure portal* and can be used to create a new virtual machine. **Until this disk is manually removed, you will incur charges** for the disk whether it is in use or not.
+
+When you deploy a **VM** in Azure, the **licensing for the OS is typically included in the hourly charge**.
 
 
 ## 13. Support
