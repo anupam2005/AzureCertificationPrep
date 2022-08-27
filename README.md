@@ -83,6 +83,10 @@ https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview
 
 Azure Virtual Desktop (formerly Windows Virtual Desktop) helps you quickly set up an environment, and even lets you reuse any existing Windows 10 licenses you have.
 
+**WebJobs** is a feature of Azure App Service that *enables you to run a program or script in the same context as a web app, API app, or mobile app*. On it's own, **it doesn't provide for serverless computing**.
+
+**Azure Reserved Virtual Machine** Instances allow you to sign on for a **1- or 3-year commitment for a long-running virtual machine** that can **save up to 70%** compared to month-to-month pricing.
+
 
 ## 5. Networking
 -------------
@@ -129,6 +133,11 @@ Append blobs are used for operations where you are *appending* new data to exist
 
 **Ultra disks** are the most expensive, yet **highest-performing disk** types available for Azure virtual machines. They support up to 64TB on a single disk.
 
+The following are all valid Azure Storage redundancy options - **Locally redundant storage, Zone-redundant storage, Geo-redundant storage, Read-access geo-redundant storage, Geo-zone-redundant storage and Read-access geo-zone-redundant storage.**
+
+
+**Azure Queue storage** is a service for **storing large numbers of messages** that can be accessed from anywhere in the world via **authenticated calls using HTTP or HTTPS**.
+
 
 ## 7. Database
 -----------
@@ -162,6 +171,9 @@ A single user can belong to a maximum of **500 Azure AD** tenants as a member or
 https://docs.microsoft.com/en-us/azure/active-directory/enterprise-users/directory-service-limits-restrictions
 
 
+**Conditional Access policies** are a component of **Azure Active Directory** that let you create if-then statements for **allowing/denying authentication to different applications**, including conditions to require **multi-factor authentication**. They provide **centralized conditional access** that can be enforced company-wide.
+
+
 
 ## 9. Azure Solutions
 -------------------
@@ -189,7 +201,11 @@ Analyzing Big Data can often lead to more precise decision-making for a business
 
 Formerly know as "Azure Machine Learning Service," **Azure Machine Learning** is an all-in-one service that supports the entire end-to-end process of creating, testing, and deploying machine learning models. This is the ideal service for creating your own custom machine learning models. (Use this to do your own stuff)
 
-**Azure Cognitive Services** is a machine learning service; however, this one provides **pretrained models** accessible via an API. 
+**Azure Cognitive Services** is a machine learning service; however, this one provides **pretrained models** accessible via an API.
+
+**Azure DevTest Labs** enables the creation of **repeatable VM-based test environments using ARM templates** and the ability to **set limits on the number and size of VMs** to control costs.
+
+
 
 ## 10. Security
 ------------
@@ -218,11 +234,17 @@ Azure dedicated hosts run on their own dedicated hardware inside the Azure datac
 
 **Azure Sentinel** will collate, aggregate, and analyze data from multiple Azure services to detect any unusual behavior or patterns. You can then take action on the information.
 
-**Azure Key Vault** is a secure place to store passwords and other secrets. Once stored, you can never retrieve the actual value or keys, but you can share access to the value or specific versions of a secret with other third-party clients and other Azure services. You can also restrict or deny access easily and quickly, should it be necessary.
+**Azure Key Vault** is a secure place to store passwords and other secrets. Once stored, you can never retrieve the actual value or keys, but you can share access to the value or specific versions of a secret with other third-party clients and other Azure services. You can also restrict or deny access easily and quickly, should it be necessary. It stores **tokens, passwords, certificates, API keys, and other secrets**.
+
 
 **Azure Policy** is used to enforce different rules and effects over your resources, such as limiting what actions different administrators can perform within resource group.
 
 Appropriately configured **Network Security groups** allow you to *control all inbound and outbound traffic for your virtual machines.*
+
+**Azure Privileged Identity Management (PIM)** is a service in Azure **Active Directory (Azure AD)** that enables you to manage, control, and monitor access to important resources in your organization.
+
+**Azure AD Connect** in an on-premises environment is capable of **synchronizing on-premises and Azure AD accounts**, so users can be signed in and be managed in both locations without having to maintain 2 separate Active Directory environments.
+
 
 ## 11. Privacy, Compliance & Trust
 -------------------------------
@@ -249,7 +271,11 @@ Role-based access control (RBAC) helps you manage who has access to Azure resour
 
 The General Data Protection Regulation (EU) 2016/679 **("GDPR")** is a regulation in **EU** law on data protection and privacy for all individuals within the European Union (EU) and the European Economic Area (EEA). It also addresses the export of personal data outside the EU and EEA areas. The GDPR aims primarily to give control to individuals over their personal data and to simplify the regulatory environment for international business by unifying the regulation within the EU.
 
- **ISO** - The International Organization for Standardization (ISO) is an independent nongovernmental organization and the world's largest developer of voluntary international standards. 
+ **ISO** - The International Organization for Standardization (ISO) is an independent nongovernmental organization and the world's largest developer of voluntary international standards.
+
+ **Microsoft Defender for Cloud**, under the Cloud Security topic, the Regulatory compliance blade can be found. You can view your compliance posture relative to the **standards and regulations and remediate assessments**.
+
+ **Compliance Manager** has a regulatory compliance dashboard, and Compliance Manager enables you to track, assign, and verify your organization's **regulatory compliance activities related to Microsoft Professional Services and Microsoft cloud services, such as Microsoft Office 365, Microsoft Dynamics 365, and Microsoft Azure**. 
 
 
 ## 12. Pricing
