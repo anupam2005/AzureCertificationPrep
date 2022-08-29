@@ -314,6 +314,7 @@ When you deploy a **VM** in Azure, the **licensing for the OS is typically inclu
 
 The **Cost Management tool** in Azure is supported by all subscriptions on Azure.
 
+The **Cost Management tool** in Azure is **supported by all subscriptions** on Azure.
 
 ## 13. Support
 -------
