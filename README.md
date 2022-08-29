@@ -31,7 +31,7 @@ Scalability is a core benefit of cloud computing and allows any application to a
 
 A hybrid cloud model is the best of private and public cloud that can be used to avoid disruptions and outages, adhere to regulation and governance, span solutions across both public and private cloud, and alleviate CapEx investments.
 
-
+There is overlap between high availability and disaster recovery (the correct answer). **High availability** is more focused on **replacing individual failed servers** and maintaining clusters (or groups) of identical resources to ensure they are available. **Disaster recovery** is more focused on **plans to recover from more wide-scale disasters**.
 
 
 ## 3. Azure Architecture
@@ -58,7 +58,13 @@ Resources belong to a resource group, which can be a geographical, logical, cust
 
 **Azure Blueprints** is a *declarative way to orchestrate the deployment of various resource templates* and other artifacts such as: - *Role assignments* - *Policy assignments* - *Azure Resource Manager templates (ARM templates)* - *Resource groups*
 
+**Azure Blueprints** are templates for creating compliant Azure infrastructure projects. You can **use them to comply with standards and regulations** that apply to your company. 
+
 We use **resource groups** to manage resource lifecycles.
+
+
+The **Azure Cloud Shell** is accessible by selecting the **(>) button in the top menu** of the Azure Portal.
+
 
 ## 4. Compute
 ---------
@@ -68,6 +74,8 @@ Infrastructure as a Service includes services that emulate hardware, such as vir
 A fully managed platform means the provider manages the infrastructure layer, such as VMs, disks, networks, and more. You only have to focus on the core functionality of your application. Fully managed services on Azure are available on all subscription types and come at no extra cost.
 
 Azure VMs are close to a on premise windows machine. So, if asked easiest way to lift & sift a on-premise machine to Azure - Answer will be by creating a VM.
+
+VMs can be moved between - **Subsriptions, Resource Groups, Availability Zones, Regions**.
 
 Azure virtual machine **scale sets** let you create and manage a group of load balanced VMs. The number of VM instances can automatically increase or decrease in response to demand or a defined schedule. Scale sets provide high availability to your applications and allow you to centrally manage, configure, and update a large number of VMs. With virtual machine scale sets, you can build large-scale services for areas such as compute, big data, and container workloads. 
 https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview
@@ -103,9 +111,13 @@ You can use *multi-site hosting* to use the same **Application Gateway** for mor
 
 An **Application Gateway** is similar to a load balancer, but it can *redirect traffic* based on attributes in the HTTP request, the request coming in from the internet. You can have a VM handling video, one handling images and so on. Application Gateways do not handle traffic security, nor manage any virtual networks.
 
+**Azure Application Gateway** is a web traffic load balancer that enables you to manage traffic to your web applications. They are aware of the much more abstract **high-level layer 7 in the OSI model**, meaning the load balancer **understands HTTP headers and can do things such as routing requests to different places based on the URL of a web request**.
+
 **Azure Virtual Network** enables *Azure resources to securely communicate with each other*, the internet, and on-premises networks. Key scenarios that you can accomplish a virtual network include: *communication of Azure resources with the internet, communication between Azure resources, communication with on-premises resources, filtering network traffic, routing network traffic, and integration*
 
 A **VPN gateway** is an important part of a hybrid Azure infrastructure. It allows *encrypted traffic* to flow between *on-premises services and Azure services*.
+
+An **Azure VPN Gateway** consists of a **Virtual Network, a secure connection called a tunnel, and an on-premises network and gateway**. 
 
 A **CDN** keeps a recent copy of your web application and can deliver this much faster to users close to an endpoint. CDNs can handle a lot more data than a typical web server, which makes it ideal to handle traffic spikes as well. CDNs don't generally handle individual traffic routing rules, nor security.
 
@@ -199,6 +211,8 @@ Logic Apps connect systems both *inside and outside* of the Azure platform, inte
 
 Analyzing Big Data can often lead to more precise decision-making for a business, a cost reduction on the storage of the data using a service like Azure Data Lake, and better products that take customer feedback and behavior into account.
 
+**Azure Data Lake Analytics** is an **on-demand analytics** job service that **simplifies big data**. Instead of deploying, configuring, and tuning hardware, **you write queries to transform your data and extract valuable insights**. The analytics service can handle jobs of any scale instantly by setting the dial for how much power you need. You only pay for your job when it is running, making it cost-effective.
+
 **Azure Data Lake Analytics** can run massively parallel data *transformation and processing* programs across petabytes of data. 
 
 **Azure HDInsight** is an *open-source* analytics service for enterprises that makes it easy, fast, and *cost-effective* to process massive amounts of data.
@@ -224,7 +238,7 @@ A **Network Security Group** manages the traffic to *specific services*.
 
 a **load balancer** distributes traffic to specific VMs. 
 
-**Microsoft Defender for Identity** helps you detect and investigate security incidents across your Azure accounts, both on-premises and in the cloud. It monitors users, devices, and resources in terms of their behavior. If any behavior is out of the ordinary, an alarm can be raised.
+**Microsoft Defender for Identity** helps you detect and investigate **security incidents** across your Azure accounts, **both on-premises and in the cloud**. It **monitors users, devices, and resources in terms of their behavior**. If any behavior is out of the ordinary, an alarm can be raised.
 
 **Microsoft Defender for Identity** (formerly Azure Advanced Threat Protection, also known as Azure ATP) is a cloud-based security solution that leverages your on-premises **Active Directory** signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization.
 
@@ -254,6 +268,8 @@ Appropriately configured **Network Security groups** allow you to *control all i
 
 **Azure AD Connect** in an on-premises environment is capable of **synchronizing on-premises and Azure AD accounts**, so users can be signed in and be managed in both locations without having to maintain 2 separate Active Directory environments.
 
+**Network Security Groups** always include **default security rules**
+
 
 ## 11. Privacy, Compliance & Trust
 -------------------------------
@@ -265,6 +281,8 @@ Privacy is a core component of each and every Azure service, so there isn't a si
 You can use the **Trust Center** to find documentation on all the various compliance standards Azure adheres to. You can use the Service Trust Portal to read the audit reports for any part of Microsoft's products, including Azure.
 
 **Azure Monitor** can accept data from almost any service *(Both Azure & on premise)*, in order to monitor their operation and health. You get a single dashboard to view all of the current metrics, or you can delve into the archived data through the interactive query language.
+
+**Azure Monitor** - Log data collected by Azure Monitor (formerly **Azure Log Analytics**) is stored in a Log Analytics workspace, which is based on Azure Data Explorer. It collects **telemetry from a variety of sources**and uses the **Kusto query language** used by Data Explorer to retrieve and analyze data. 
 
 **Azure Service Health** notifies you about Azure service incidents and planned maintenance. You can use this information to take appropriate actions to limit any downtime. Azure Service Health can't receive data from any of your applications or third-party services. It is only for Azure.
 
@@ -316,10 +334,25 @@ The **Cost Management tool** in Azure is supported by all subscriptions on Azure
 
 The **Cost Management tool** in Azure is **supported by all subscriptions** on Azure.
 
+The **TCO (Total Cost of Ownership) calculator** is used to **compare costs between our on-premises solutions and the Azure cloud equivalent of these solutions**. We could use this tool to inform the customer of the possible cost savings involved with moving their workloads to Azure.
+
+In Azure, there are **3 billing zones.** Data **ingress is always free,** but data **egress has a cost, unless it is egress within the same billing zone**.
+
 ## 13. Support
 -------
 
 Service-level agreements are implicit for all Azure paid services. You get an SLA included with every subscription level and support level. In general, there are no SLAs associated with free products on Azure.
+
+For all **Virtual Machines** that have two or more instances deployed across **two or more Availability Zones** in the same Azure region, we guarantee you will have Virtual Machine Connectivity to at least one instance at least **99.99%** of the time.
+
+For all **Virtual Machines** that have two or more instances deployed in the **same Availability Set or in the same Dedicated Host Group**, we guarantee you will have Virtual Machine Connectivity to at least one instance at least **99.95%** of the time.
+
+For any **Single Instance Virtual Machine using Premium SSD or Ultra Disk** for all Operating System Disks and Data Disks, we guarantee you will have Virtual Machine Connectivity of at least **99.9%**.
+
+For any **Single Instance Virtual Machine using Standard SSD Managed Disks** for Operating System Disk and Data Disks, we guarantee you will have Virtual Machine Connectivity of at least **99.5%**.
+
+For any **Single Instance Virtual Machine using Standard HDD Managed Disks** for Operating System Disks and Data Disks, we guarantee you will have Virtual Machine Connectivity of at least **95%**.
+
 
 The Azure Q&A articles provide answers to a range of the most commonly asked questions. In particular, the focus is on foundational answers or answers to popular questions that are seen again and again.
 
