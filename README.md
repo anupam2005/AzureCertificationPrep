@@ -224,6 +224,8 @@ Formerly know as "Azure Machine Learning Service," **Azure Machine Learning** is
 **Azure DevTest Labs** enables the creation of **repeatable VM-based test environments using ARM templates** and the ability to **set limits on the number and size of VMs** to control costs.
 
 
+**Azure Event Grid** is a service to help you connect together an **event-based architecture** by providing a service which can receive and **pass-on event information between pieces of code** which are written to respond to certain events (e.g. a user signing up for a newsletter can trigger adding them to a database, and then trigger their welcome email.
+
 
 ## 10. Security
 ------------
