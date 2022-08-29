@@ -58,6 +58,8 @@ Resources belong to a resource group, which can be a geographical, logical, cust
 
 **Azure Blueprints** is a *declarative way to orchestrate the deployment of various resource templates* and other artifacts such as: - *Role assignments* - *Policy assignments* - *Azure Resource Manager templates (ARM templates)* - *Resource groups*
 
+We use **resource groups** to manage resource lifecycles.
+
 ## 4. Compute
 ---------
 
@@ -86,6 +88,8 @@ Azure Virtual Desktop (formerly Windows Virtual Desktop) helps you quickly set u
 **WebJobs** is a feature of Azure App Service that *enables you to run a program or script in the same context as a web app, API app, or mobile app*. On it's own, **it doesn't provide for serverless computing**.
 
 **Azure Reserved Virtual Machine** Instances allow you to sign on for a **1- or 3-year commitment for a long-running virtual machine** that can **save up to 70%** compared to month-to-month pricing.
+
+**Azure Virtual Machines** are **image service instances** that provide on-demand and scalable computing resources with usage-based pricing. 
 
 
 ## 5. Networking
@@ -239,6 +243,11 @@ Azure dedicated hosts run on their own dedicated hardware inside the Azure datac
 
 **Azure Policy** is used to enforce different rules and effects over your resources, such as limiting what actions different administrators can perform within resource group.
 
+
+ **Security policies in Azure** define the desired configuration of your services and workloads. They help ensure you're complying with your **company's security requirements**.
+
+ **Azure Policy** enforces organizational standards and compliance at scale. Examples include **restricting a SKU or size of a virtual machine** or defining which types of Azure resources are allowed.
+
 Appropriately configured **Network Security groups** allow you to *control all inbound and outbound traffic for your virtual machines.*
 
 **Azure Privileged Identity Management (PIM)** is a service in Azure **Active Directory (Azure AD)** that enables you to manage, control, and monitor access to important resources in your organization.
@@ -291,6 +300,10 @@ If you want to **raise the limit or quota above the default limit**, open an onl
 
 **Azure Cost Management** is a part of the Azure portal that can visualize your current and future costs. It also includes tools for financial governance to make sure you don't get unexpected costs from incorrect use of Azure resources.
 
+The **Cost Management tool** in Azure is our central tool for managing our cloud spend in an **automated fashion**. Using the Cost Management tool, we can do things like **create billing alerts to alarm us when our cloud spend exceeds a specified threshold**.
+
+
+
 The factors that influence the **price** of a service on Azure are *resource size, resource location, and the bandwidth* being used. How much you use a resource or the age of it do not influence the price.
 
 The only way to **combine Azure subscriptions** is to open a support case with Microsoft.
@@ -298,6 +311,8 @@ The only way to **combine Azure subscriptions** is to open a support case with M
 When a **virtual machine is deleted**, its *managed disk remains in the Azure portal* and can be used to create a new virtual machine. **Until this disk is manually removed, you will incur charges** for the disk whether it is in use or not.
 
 When you deploy a **VM** in Azure, the **licensing for the OS is typically included in the hourly charge**.
+
+The **Cost Management tool** in Azure is supported by all subscriptions on Azure.
 
 
 ## 13. Support
