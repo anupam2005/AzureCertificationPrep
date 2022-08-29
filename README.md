@@ -302,7 +302,7 @@ If you want to **raise the limit or quota above the default limit**, open an onl
 
 The **Cost Management tool** in Azure is our central tool for managing our cloud spend in an **automated fashion**. Using the Cost Management tool, we can do things like **create billing alerts to alarm us when our cloud spend exceeds a specified threshold**.
 
-
+The **Cost Management tool** in Azure is **supported by all subscriptions** on Azure.
 
 The factors that influence the **price** of a service on Azure are *resource size, resource location, and the bandwidth* being used. How much you use a resource or the age of it do not influence the price.
 
